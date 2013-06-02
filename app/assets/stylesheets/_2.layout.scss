@@ -16,16 +16,15 @@ img {
 	@extend %group;
 
 	width: 100%;
-	margin: 30px auto;
 
 	li {
 		@extend %float-left;
 		list-style: none;
 		margin: 4px 4px;
 		border: 1px solid black;
-		min-width: 8.3%;
 		height: 111px;
 		overflow: hidden;
+		width: 8.0%;
 
 		li:after {
 			content: '';
