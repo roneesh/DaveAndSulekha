@@ -14,6 +14,10 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @product = Product.find(params[:id])
+    @product_gallery_image = @product.product_images.where(image_type: "gallery").sample
+    @product_flat_image = @product.product_images.where(image_type: "flat").sample
+    @product_navy_suit_image = @product.product_images.where(image_type: "navy_suit").sample
+    @product_stone_suit_image = @product.product_images.where(image_type: "stone_suit").sample
 
     respond_to do |format|
       format.html # show.html.erb

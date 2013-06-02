@@ -14,11 +14,10 @@
   <div class="field">
     <%= f.label :product_id %><br />
       <%= f.collection_select :product_id, Product.all, :id, :name, :prompt => true  %>
-
   </div>
   <div class="field">
     <%= f.label :image_type %><br />
-    <%= f.text_field :image_type %>
+      <%= f.select :image_type, [['Flat','flat'],['Navy Suit','navy_suit'],['Stone Suit','stone_suit'], ['Gallery', 'gallery']] %>
   </div>
   <div class="field">
     <%= f.label :source %><br />

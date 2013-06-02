@@ -8,6 +8,8 @@ DaveAndSulekha::Application.routes.draw do
 
   get "/shop", controller: "Products", action: "index"
 
+  get "/about", controller: "Pages", action: "about"
+
   root :to => "Products#index"
 
 

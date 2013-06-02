@@ -9,6 +9,7 @@
 rp_desc = "The R.P. Sharma is a line of plaids I sourced in New Delhi. Running around the city I looked for bleeding madras, we ended up finding these few bolts in the basement of a fabric shop in an electronics market. When I saw them, my breath was taken away. Just like the old madras, alive with color, these are the square for summer. "
 dn_desc = "I found these pastels in Chandigargh while sourcing fabric in the city of Corbusier. 'What's the provenance of these fabrics?' I asked. 'Hand loomed, from the villages sir'. These are rough hewn squares, made by our family tailor in Hoshiarpur, fold 'em, stuff 'em, they're the casual square. They still smell like India too."
 webster_desc = "These fabrics are from around town in Hoshiarpur, when the heat abated I would go shopping, these were rescued from the corner of a fabric shop located in a meat market. These are really rough squares, basically unfinished, as they unfinish more with wear and washing they'll be nice."
+img_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYHIutQvJpBupYxSh2QUDebWrpPGkceaoZIwxmi1vIIRW9P8pK7w"
 
 products = [
   {name: "The R.P. Sharma in Green", price: 21, description: rp_desc },
@@ -26,7 +27,14 @@ products = [
 
 products.each do |product|
   p = Product.create product
-  3.times do
-    ProductImage.create(product_id: p.id )
+  3.times do |n|
+    if n == 0
+      ProductImage.create(product_id: p.id, image_type: "flat", source: img_url )
+    elsif n == 1
+      ProductImage.create(product_id: p.id, image_type: "navy_suit", source: img_url)
+    elsif n == 2
+      ProductImage.create(product_id: p.id, image_type: "stone_suit", source: img_url)
+    end
   end
 end
+
