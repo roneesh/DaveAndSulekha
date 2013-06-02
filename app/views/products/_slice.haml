@@ -1,0 +1,19 @@
+%section.slice
+  .gallery-exhibit
+    = image_tag "im-dn-blue-flat.JPG", :class => "gallery-image-large", :id => "exhibit1"
+  .gallery-thumbs
+    = image_tag "im-rp-green-stonecoat.JPG", :class => "gallery-thumb"
+    = image_tag "im-rp-blue-navycoat.JPG", :class => "gallery-thumb"
+  .pocket-square-copy
+    .name
+      %h3
+        = @product.name 
+    .price-and-description
+      .price
+        %h1 
+          = @product.price
+          <small>dollars</small>
+        %p.description
+          = @product.description
+        - if @product.etsy_link
+          = link_to "Purchase on Etsy", @product.etsy_link, class: "button", target: "newtab"

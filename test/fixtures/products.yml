@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  product_line: MyString
+  etsy_link: MyString
+  price: 1
+
+two:
+  name: MyString
+  description: MyString
+  product_line: MyString
+  etsy_link: MyString
+  price: 1

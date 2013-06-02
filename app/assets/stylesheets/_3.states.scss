@@ -1,0 +1,69 @@
+/* States
+================================================== */
+// $body : #f5f5ee;
+$body : #d9d9d1;
+$white: #e8e8e8;
+$didot: Didot, Georiga, serif;
+$helveticaneue: Helvetica Neue;
+
+$img-gradient: -webkit-linear-gradient(-30deg, rgba(255, 255, 255, .4), rgba(0, 0, 0, .7));
+
+header {
+	border-bottom: 1px solid $white;
+
+	h1 {
+		@extend %helveticaneue-thin;
+		font-style: italic;
+		margin: .5em 0;
+		font-size: 1.5em;
+		span {
+			float: right;
+		}
+		a {
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+
+}
+
+.nav-title:after {
+	// content: "cart";
+}
+
+footer {
+		font-family: $didot;
+		font-style: italic;
+		margin-bottom: 20px;
+		margin-left: 4px;
+}
+
+section {
+	margin-top: 1.25em;
+}
+
+.main {
+	background: $img-gradient, url(stack.JPG) 0 -120px no-repeat;
+	height: 400px;
+	background-size: cover;
+	@extend %helveticaneue-thin;
+
+	h2 {
+		font-size: 2.75em;
+		padding-top: 165px;
+		text-align: center;
+		letter-spacing: .05em;
+		font-style: italic;
+		color: $white;
+	}
+
+	h3 {
+		font-variant: small-caps;
+		color: $white;
+		letter-spacing: .5em;
+		text-align: center;
+		font-size: 1.2em;
+	}
+}

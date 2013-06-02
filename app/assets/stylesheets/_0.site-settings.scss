@@ -1,0 +1,36 @@
+// $body : #f5f5ee;
+$body : #d9d9d1;
+$white: #e8e8e8;
+$didot: Didot, Georiga, serif;
+$helveticaneue: Helvetica Neue;
+
+$img-gradient: -webkit-linear-gradient(-30deg, rgba(255, 255, 255, .4), rgba(0, 0, 0, .7));
+
+%group:before,
+%group:after {
+    content: "";
+    display: table;
+}
+%group:after {
+    clear: both;
+}
+%group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+%helveticaneue-thin {
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 100;
+}
+
+%float-left {
+	float: left;
+}
+
+%float-right {
+	float: right;
+}
+
+%buffer {
+	margin: 0 10px;
+}
