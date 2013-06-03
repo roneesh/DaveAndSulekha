@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130602194535) do
+ActiveRecord::Schema.define(:version => 20130603205313) do
 
   create_table "product_images", :force => true do |t|
     t.integer  "product_id"
@@ -23,12 +23,12 @@ ActiveRecord::Schema.define(:version => 20130602194535) do
 
   create_table "products", :force => true do |t|
     t.string   "name"
-    t.string   "description"
+    t.text     "description",  :limit => 255
     t.string   "product_line"
     t.string   "etsy_link"
     t.integer  "price"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
   end
 
 end
