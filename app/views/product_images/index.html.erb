@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th>Product</th>
+    <th>Product Name</th>
     <th>Image type</th>
     <th>Source</th>
     <th></th>
@@ -12,7 +12,7 @@
 
 <% @product_images.each do |product_image| %>
   <tr>
-    <td><%= product_image.product_id %></td>
+    <td><%= truncate((Product.find(product_image.product_id).name), length: 27) %></td>
     <td><%= product_image.image_type %></td>
     <td><%= product_image.source %></td>
     <td><%= link_to 'Show', product_image %></td>
