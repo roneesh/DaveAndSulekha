@@ -9,7 +9,7 @@
     %ul
       -@products.each do |product|
         %li
-          = link_to image_tag(product.product_images.where(image_type: "gallery").sample.source), product_url(product.id)
+          = link_to image_tag(product.product_images.where(image_type: "gallery").sample.source), product_url(product.id), remote: true
 
 
 

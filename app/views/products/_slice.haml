@@ -1,9 +1,9 @@
 %section.slice
   .gallery-exhibit
-    = image_tag @product_flat_image.source, :class => "gallery-image-large", :id => "exhibit1"
+    = image_tag @product.flat_image_src, :class => "gallery-image-large", :id => "exhibit1"
   .gallery-thumbs
-    = image_tag @product_navy_suit_image.source, :class => "gallery-thumb"
-    = image_tag @product_stone_suit_image.source, :class => "gallery-thumb"
+    = image_tag @product.navy_suit_image_src, :class => "gallery-thumb"
+    = image_tag @product.stone_suit_image_src, :class => "gallery-thumb"
   .pocket-square-copy
     .name
       %h3
