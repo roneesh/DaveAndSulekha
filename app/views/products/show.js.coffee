@@ -1,7 +1,6 @@
 $('.slice').remove()
 $('.product-container').append('<%= j render "slice", :product => @product %>')
 
-
 thumbsrc = $('#exhibit1').attr('src')
 $('.gallery-exhibit').zoom({url: thumbsrc})
 
