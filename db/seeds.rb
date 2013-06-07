@@ -19,14 +19,14 @@ webster_desc = "These fabrics are from around town in Hoshiarpur, when the heat 
 img_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYHIutQvJpBupYxSh2QUDebWrpPGkceaoZIwxmi1vIIRW9P8pK7w"
 
 products = [
-  {name: "The R.P. Sharma in Green", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152200914/the-rp-sharma-pocket-square-in-green", name_partial: "rp-green" },
-  {name: "The R.P. Sharma in Blue", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152204599/the-rp-sharma-pocket-square-in-blue", name_partial: "rp-blue" },
-  {name: "The R.P. Sharma in Juniper and Yellow", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152202304/the-rp-sharma-pocket-square-in-juniper", name_partial: "rp-juniper"},
-  {name: "The R.P. Sharma in Navy and Red", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152201830/the-rp-sharma-pocket-square-in-navy-and", name_partial: "rp-navyred"},
-  {name: "The D.N. Vashisht in Turqoise Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152754916/the-dn-vashisht-pocket-square-in", name_partial: "dn-turquoise"},
-  {name: "The D.N. Vashisht in Metal", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152757211/the-dn-vashisht-pocket-square-in-metal", name_partial: "dn-metal"},
-  {name: "The D.N. Vashisht in Blue Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152754320/the-dn-vashisht-pocket-square-in-blue", name_partial: "dn-blue"},
-  {name: "The D.N. Vashisht in Pink Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152753598/the-dn-vashisht-pocket-square-in-pink", name_partial: "dn-pink"},
+  {name: "The R.P. in Green", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152200914/the-rp-sharma-pocket-square-in-green", name_partial: "rp-green" },
+  {name: "The R.P. in Blue", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152204599/the-rp-sharma-pocket-square-in-blue", name_partial: "rp-blue" },
+  {name: "The R.P. in Juniper and Yellow", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152202304/the-rp-sharma-pocket-square-in-juniper", name_partial: "rp-juniper"},
+  {name: "The R.P. in Navy and Red", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152201830/the-rp-sharma-pocket-square-in-navy-and", name_partial: "rp-navyred"},
+  {name: "The D.N. in Turqoise Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152754916/the-dn-vashisht-pocket-square-in", name_partial: "dn-turquoise"},
+  {name: "The D.N. in Metal", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152757211/the-dn-vashisht-pocket-square-in-metal", name_partial: "dn-metal"},
+  {name: "The D.N. in Blue Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152754320/the-dn-vashisht-pocket-square-in-blue", name_partial: "dn-blue"},
+  {name: "The D.N. in Pink Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152753598/the-dn-vashisht-pocket-square-in-pink", name_partial: "dn-pink"},
   {name: "The Webster in Red", price: 8, description: webster_desc, etsy_link: "https://www.etsy.com/listing/152759797/the-webster-pocket-square-in-red", name_partial: "webster-red"},
   {name: "The Webster in Orange", price: 8, description: webster_desc, etsy_link: "https://www.etsy.com/listing/152759637/the-webster-pocket-square-in-orange", name_partial: "webster-orange" },
   {name: "The Webster in Gingham", price: 8, description: webster_desc, etsy_link: "https://www.etsy.com/listing/152755192/the-webster-pocket-square-in-gingham", name_partial: "webster-gingham"}

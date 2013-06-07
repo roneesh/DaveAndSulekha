@@ -1,11 +1,19 @@
 ---
+IMG_3620.JPG: IMG_3620-516a554876e9604e201ec84f9b72ce52.JPG
+IMG_3620/index.JPG: IMG_3620-516a554876e9604e201ec84f9b72ce52.JPG
+abt-roneesh-corpped.jpg: abt-roneesh-corpped-ce431e16a21383410598867baaecbc97.jpg
+abt-roneesh-corpped/index.jpg: abt-roneesh-corpped-ce431e16a21383410598867baaecbc97.jpg
+abt-roneesh-cropped.jpg: abt-roneesh-cropped-1ed4fa70e71bc94a399b5ec19732dd94.jpg
+abt-roneesh-cropped/index.jpg: abt-roneesh-cropped-1ed4fa70e71bc94a399b5ec19732dd94.jpg
 rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
+roneesh-abt.JPG: roneesh-abt-d68199bb59f5b9175b263aa8cd4f9308.JPG
+roneesh-abt/index.JPG: roneesh-abt-d68199bb59f5b9175b263aa8cd4f9308.JPG
 stack.JPG: stack-a653715432b31208a54494805d915ca0.JPG
 stack/index.JPG: stack-a653715432b31208a54494805d915ca0.JPG
-application.js: application-07def00818395c7cca030971991be70b.js
-application/index.js: application-07def00818395c7cca030971991be70b.js
-application.css: application-a0bf7a0f338ab5c53fe713ef96648136.css
-application/index.css: application-a0bf7a0f338ab5c53fe713ef96648136.css
+application.js: application-a977216b489cfa8dd3c2ae685b6cc3c9.js
+application/index.js: application-a977216b489cfa8dd3c2ae685b6cc3c9.js
+application.css: application-ce0aa0511cbd56797129654d30ee2ef7.css
+application/index.css: application-ce0aa0511cbd56797129654d30ee2ef7.css
 jquery.min.map: jquery.min-8b58c0fbf303b938d8e749262f7e50dd.map
 jquery/index.min.map: jquery.min-8b58c0fbf303b938d8e749262f7e50dd.map

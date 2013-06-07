@@ -1,19 +1,13 @@
 %section.slice
   .gallery-exhibit
-    = image_tag @product.flat_image_src, :class => "gallery-image-large", :id => "exhibit1"
+    = image_tag @product.navy_suit_image_src, :class => "gallery-image-large", :id => "exhibit1"
   .gallery-thumbs
     = image_tag @product.navy_suit_image_src, :class => "gallery-thumb"
     = image_tag @product.stone_suit_image_src, :class => "gallery-thumb"
+    = image_tag @product.flat_image_src, :class => 'gallery-thumb'
   .pocket-square-copy
-    .name
-      %h3
-        = @product.name 
-    .price-and-description
-      .price
-        %h1 
-          = @product.price
-          <small>dollars</small>
-        %p.description
-          = @product.description
-        - if @product.etsy_link
-          = link_to "Purchase on Etsy", @product.etsy_link, class: "button", target: "newtab"
+    %h3.name
+      = @product.name 
+    %p.description
+      = @product.description
+    = link_to "Purchase for $#{@product.price} on Etsy", @product.etsy_link, class: "button", target: "newtab"
