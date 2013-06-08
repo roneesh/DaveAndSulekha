@@ -35,7 +35,7 @@ products = [
 products.each do |product|
   p = Product.create(name: product[:name], price: product[:price], description: product[:description], etsy_link: product[:etsy_link])
   puts "Created product #{p.id}..."
-  4.times do |n|
+  5.times do |n|
     if n == 0
       ProductImage.create(product_id: p.id, image_type: "flat", source: "https://s3.amazonaws.com/dave-and-sulekha-images/im-#{product[:name_partial]}-flat.JPG" )
       puts "Created product image for product #{p.id}"
@@ -48,6 +48,8 @@ products.each do |product|
     elsif n == 3
       ProductImage.create(product_id: p.id, image_type: "gallery", source: "https://s3.amazonaws.com/dave-and-sulekha-images/im-#{product[:name_partial]}-gallery.JPG")
       puts "Created product image for product #{p.id}"
+    elsif n == 4
+      ProductImage.create(product_id: p.id, image_type: "pattern", source: "https://s3.amazonaws.com/dave-and-sulekha-images/im-#{product[:name_partial]}-pattern.JPG")
     end
   end
 end

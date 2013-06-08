@@ -15,4 +15,8 @@ class Product < ActiveRecord::Base
     self.product_images.where(image_type: "stone_suit").sample.source
   end
 
+  def pattern_image_src
+    self.product_images.where(image_type: "pattern").sample.source
+  end 
+
 end
