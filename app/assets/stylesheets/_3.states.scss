@@ -38,6 +38,8 @@ header {
 }
 
 footer {
+		position: absolute;
+		bottom: 0;
 		font-family: $didot;
 		font-style: italic;
 		margin-bottom: 20px;
