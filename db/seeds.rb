@@ -23,7 +23,7 @@ products = [
   {name: "The R.P. in Blue", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152204599/the-rp-sharma-pocket-square-in-blue", name_partial: "rp-blue" },
   {name: "The R.P. in Juniper and Yellow", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152202304/the-rp-sharma-pocket-square-in-juniper", name_partial: "rp-juniper"},
   {name: "The R.P. in Navy and Red", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152201830/the-rp-sharma-pocket-square-in-navy-and", name_partial: "rp-navyred"},
-  {name: "The D.N. in Turqoise Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152754916/the-dn-vashisht-pocket-square-in", name_partial: "dn-turquoise"},
+  {name: "The D.N. in Turqoise Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152754916/the-dn-vashisht-pocket-square-in", name_partial: "dn-turqoise"},
   {name: "The D.N. in Metal", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152757211/the-dn-vashisht-pocket-square-in-metal", name_partial: "dn-metal"},
   {name: "The D.N. in Blue Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152754320/the-dn-vashisht-pocket-square-in-blue", name_partial: "dn-blue"},
   {name: "The D.N. in Pink Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152753598/the-dn-vashisht-pocket-square-in-pink", name_partial: "dn-pink"},
@@ -37,19 +37,19 @@ products.each do |product|
   puts "Created product #{p.id}..."
   5.times do |n|
     if n == 0
-      ProductImage.create(product_id: p.id, image_type: "flat", source: "https://s3.amazonaws.com/dave-and-sulekha-images/im-#{product[:name_partial]}-flat.JPG" )
+      ProductImage.create(product_id: p.id, image_type: "flat", source: "https://s3.amazonaws.com/dave-and-sulekha-images/flat/im-#{product[:name_partial]}-flat.JPG" )
       puts "Created product image for product #{p.id}"
     elsif n == 1
-      ProductImage.create(product_id: p.id, image_type: "navy_suit", source: "https://s3.amazonaws.com/dave-and-sulekha-images/im-#{product[:name_partial]}-navycoat.JPG")
+      ProductImage.create(product_id: p.id, image_type: "navy_suit", source: "https://s3.amazonaws.com/dave-and-sulekha-images/navy/im-#{product[:name_partial]}-navycoat.JPG")
       puts "Created product image for product #{p.id}"
     elsif n == 2
-      ProductImage.create(product_id: p.id, image_type: "stone_suit", source: "https://s3.amazonaws.com/dave-and-sulekha-images/im-#{product[:name_partial]}-stonecoat.JPG")
+      ProductImage.create(product_id: p.id, image_type: "stone_suit", source: "https://s3.amazonaws.com/dave-and-sulekha-images/stone/im-#{product[:name_partial]}-stonecoat.JPG")
       puts "Created product image for product #{p.id}"
     elsif n == 3
-      ProductImage.create(product_id: p.id, image_type: "gallery", source: "https://s3.amazonaws.com/dave-and-sulekha-images/im-#{product[:name_partial]}-gallery.JPG")
+      ProductImage.create(product_id: p.id, image_type: "gallery", source: "https://s3.amazonaws.com/dave-and-sulekha-images/gallery/im-#{product[:name_partial]}-gallery.JPG")
       puts "Created product image for product #{p.id}"
     elsif n == 4
-      ProductImage.create(product_id: p.id, image_type: "pattern", source: "https://s3.amazonaws.com/dave-and-sulekha-images/im-#{product[:name_partial]}-pattern.JPG")
+      ProductImage.create(product_id: p.id, image_type: "pattern", source: "https://s3.amazonaws.com/dave-and-sulekha-images/pattern/im-#{product[:name_partial]}-pattern.JPG")
     end
   end
 end
