@@ -19,10 +19,10 @@ webster_desc = "These fabrics are from around town in Hoshiarpur, when the heat 
 img_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYHIutQvJpBupYxSh2QUDebWrpPGkceaoZIwxmi1vIIRW9P8pK7w"
 
 products = [
+  {name: "The R.P. in Navy and Red", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152201830/the-rp-sharma-pocket-square-in-navy-and", name_partial: "rp-navyred"},
   {name: "The R.P. in Green", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152200914/the-rp-sharma-pocket-square-in-green", name_partial: "rp-green" },
   {name: "The R.P. in Blue", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152204599/the-rp-sharma-pocket-square-in-blue", name_partial: "rp-blue" },
   {name: "The R.P. in Juniper and Yellow", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152202304/the-rp-sharma-pocket-square-in-juniper", name_partial: "rp-juniper"},
-  {name: "The R.P. in Navy and Red", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152201830/the-rp-sharma-pocket-square-in-navy-and", name_partial: "rp-navyred"},
   {name: "The D.N. in Turqoise Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152754916/the-dn-vashisht-pocket-square-in", name_partial: "dn-turqoise"},
   {name: "The D.N. in Metal", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152757211/the-dn-vashisht-pocket-square-in-metal", name_partial: "dn-metal"},
   {name: "The D.N. in Blue Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152754320/the-dn-vashisht-pocket-square-in-blue", name_partial: "dn-blue"},

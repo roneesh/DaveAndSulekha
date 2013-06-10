@@ -197,7 +197,7 @@ img {
 .abt-text-box p {
 	@extend %helveticaneue-thin;
 	color: white;
-	font-size: 24pt;
+	max-font-size: 24pt;
 	font-style: italic;
 	line-height: 1.25em;
 	padding: 2.5% 5%;
