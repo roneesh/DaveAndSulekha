@@ -1,11 +1,18 @@
 
+%h1.collection-number Collezione 1 - Pocket Squares
+%h3.collection-product-line The Perfect Madras
+%hr.collection-divider
+%ul.collection-thumb-list
+  -@products.each do |product|
+    -if product.product_line == "The Perfect Madras"
+      %li.collection-thumb
+        = link_to image_tag(product.product_images.where(image_type: "gallery").sample.source), product_url(product.id), remote: true
 
-
-
-
-
-
-%h1 Collezione 1
-%h3 The Perfect Madras
-%hr
-
+%h1.collection-number Collezione 2 - Pocket Squares
+%h3.collection-product-line The Perfect Pastel
+%hr.collection-divider
+%ul.collection-thumb-list
+  -@products.each do |product|
+    -if product.product_line == "The Perfect Pastel"
+      %li.collection-thumb
+        = link_to image_tag(product.product_images.where(image_type: "gallery").sample.source), product_url(product.id), remote: true
