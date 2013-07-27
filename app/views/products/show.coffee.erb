@@ -1,6 +1,8 @@
 $('.slice').fadeOut()
-$('.main').fadeOut()
-$('.product-container').html('<%= j render "slice", :product => @product %>')
+# $('.main').fadeOut()
+<% if @product.product_line == "The Perfect Madras" %>
+	$('.madras-product-container').html('<%= j render "slice", :product => @product %>')
+<% end %>
 
 thumbsrc = $('#exhibit1').attr('src')
 $('.gallery-exhibit').zoom({url: thumbsrc})

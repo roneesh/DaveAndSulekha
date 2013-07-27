@@ -216,3 +216,35 @@ img {
 .abt-li:first-child {
 	margin-top: 50px;
 }
+
+.main {
+	background: $img-gradient, url(stack.JPG) 0 no-repeat;
+	height: 250px;
+	background-size: cover;
+	@extend %helveticaneue-thin;
+
+  .name-div {
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+    position: relative;
+    top: 75px;
+    background: rgba(0,0,0,0.6)
+  }
+
+	h2 {
+		font-size: 2.75em;
+		text-align: center;
+		letter-spacing: .05em;
+		font-style: italic;
+		color: $white;
+	}
+
+	h3 {
+		font-variant: small-caps;
+		color: $white;
+		letter-spacing: .5em;
+		text-align: center;
+		font-size: 1.2em;
+	}
+}
