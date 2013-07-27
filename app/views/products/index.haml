@@ -1,15 +1,11 @@
-%section.main
-  %h2 <i>Dave & Sulekha</i>
-  %h3 Unquestionable Clothing
-
-.container
-  %section.product-container#anchor
-
-  %section.thumbnails
-    %ul
-      -@products.each do |product|
-        %li
-          = link_to image_tag(product.product_images.where(image_type: "gallery").sample.source), product_url(product.id), remote: true
 
 
+
+
+
+
+
+%h1 Collezione 1
+%h3 The Perfect Madras
+%hr
 

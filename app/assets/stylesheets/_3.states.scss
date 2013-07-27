@@ -52,8 +52,8 @@ section {
 }
 
 .main {
-	background: $img-gradient, url(stack.JPG) 0 -120px no-repeat;
-	height: 400px;
+	background: $img-gradient, url(stack.JPG) 0 no-repeat;
+	height: 250px;
 	background-size: cover;
 	@extend %helveticaneue-thin;
 
