@@ -2,37 +2,72 @@ $didot: Didot, Georiga, serif
 $helveticaneue: Helvetica Neue
 
 .collection
-  margin-top: 35px
-  margin-bottom: 25px
+
+.collection-first
+  margin-top: 20px
 
 .collection-number
   font-size: 36px
   font-family: $helveticaneue
-  font-style: italic
   font-weight: 500
+  margin: 15px 0
+  color: #333
 
 .collection-product-line
   font-size: 24px
   font-family: $didot
+  font-style: italic
+  margin: 10px 0
+  letter-spacing: 1px
+  color: #444
 
 .colllection-divider
   height: 2px
-  background: black
+  background-color: #999
 
 .collection-thumb-list
   width: 100%
   height: 250px
   list-style-type: none
-  margin: 20px 0
+  margin: 20px 0 0 0
 
 .collection-thumb
+
   float: left
-  border: 1px solid black
-  width: 20%
-  margin-right: 4%
+  border: 1px solid #999
+  width: 21%
+  margin-right: 5%
   height: 200px
   overflow: hidden
   img
     width: 100%
     position: relative
     bottom: 60px
+    display: block
+    -webkit-transition-property: opacity 
+    -webkit-transition-duration: .5s
+  img:hover
+    opacity: 0.7
+
+
+.collection-thumb:hover 
+  box-shadow: 0 0 3px rgba(10,10,10,0.3)
+
+
+.collection-thumb:last-child
+  margin-right: 0
+
+.collection-nav
+  float: right
+  margin-top: 5px
+
+.collection-nav-link
+  float: right
+  margin-right: 5px
+  font-family: $helveticaneue 
+  color: #444
+  a:hover
+    color: #444
+  a:visited
+    color: #444
+    text-decoration: none
