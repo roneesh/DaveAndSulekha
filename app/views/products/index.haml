@@ -2,14 +2,14 @@
 %section.main
   .name-div
     %h2 <i>Dave & Sulekha</i>
-    %h3 Unquestionable Clothing
-
+    %h3 The Perfect Piece
 
 %ul.collection-nav
   %li.collection-nav-link= link_to "3", "#collection3"
   %li.collection-nav-link= link_to "2", "#collection2"
   %li.collection-nav-link= link_to "1", "#collection1"
   %li.collection-nav-link Collezione: 
+
 .collection.group.collection-first#collection3
   %h1.collection-number Collezione 3
   %h3.collection-product-line The Perfect Pastel Pocket Square
@@ -19,7 +19,7 @@
       -if product.product_line == "The Perfect Pastel"
         %li.collection-thumb
           = link_to image_tag(product.product_images.where(image_type: "gallery").sample.source), product_url(product.id), remote: true
-  / .product-container
+  .pastel-product-container
 
 .collection.group#collection2
   %h1.collection-number Collezione 2
@@ -30,7 +30,7 @@
       -if product.product_line == "The Perfect Madras"
         %li.collection-thumb
           = link_to image_tag(product.product_images.where(image_type: "gallery").sample.source), product_url(product.id), remote: true
-  .product-container
+  .mardas-product-container
 
 .collection.group#collection1
   %h1.collection-number Collezione 1
@@ -41,3 +41,4 @@
       -if product.product_line == "Perfect Plaids and Gingham"
         %li.collection-thumb
           = link_to image_tag(product.product_images.where(image_type: "gallery").sample.source), product_url(product.id), remote: true
+  .plaids-and-gingham-product-container

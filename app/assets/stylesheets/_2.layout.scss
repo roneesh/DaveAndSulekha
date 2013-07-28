@@ -160,8 +160,8 @@ img {
 .abt-li {
 	border: 1px solid black;
 	float: left;
-	margin: 50px 9.9%;
-	width: 80%;
+	margin: 50px 0;
+	width: 100%;
 	position: relative;
 }
 
@@ -171,7 +171,6 @@ img {
 	width: 40%;
 	height: 200px;
 	margin-top: 25px;
-	margin: 25px 9.9%;
 	position: relative;
 	overflow: hidden;
 }
@@ -197,9 +196,10 @@ img {
 .abt-text-box p {
 	@extend %helveticaneue-thin;
 	color: white;
-	font-size: 24pt;
+	font-size: 22pt;
 	font-style: italic;
 	line-height: 1.25em;
+	letter-spacing: 1px;
 	padding: 2.5% 5%;
 }
 
@@ -210,7 +210,7 @@ img {
 .abt-text {
 	@extend %helveticaneue-thin;
 	font-style: italic;
-	margin: 20px 9.9%;
+	// margin: 20px 9.9%;
 }
 
 .abt-li:first-child {
