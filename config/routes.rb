@@ -12,7 +12,7 @@ DaveAndSulekha::Application.routes.draw do
 
   get "/splash", controller: "Products", action: "splash"
 
-  root :to => "Products#index"
+  root :to => "Products#splash"
 
 
   # The priority is based upon order of creation:
