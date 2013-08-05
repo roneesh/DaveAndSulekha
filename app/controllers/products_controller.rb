@@ -10,6 +10,16 @@ class ProductsController < ApplicationController
     end
   end
 
+  def splash
+    @products = Product.all
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @products}
+    end
+
+  end
+
   # GET /products/1
   # GET /products/1.json
   def show

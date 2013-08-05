@@ -10,6 +10,8 @@ DaveAndSulekha::Application.routes.draw do
 
   get "/about", controller: "Pages", action: "about"
 
+  get "/splash", controller: "Products", action: "splash"
+
   root :to => "Products#index"
 
 

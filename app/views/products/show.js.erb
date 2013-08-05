@@ -1,0 +1,22 @@
+// $('.slice').fadeOut();
+// $('.main').fadeOut();
+
+if ('<%= @product.product_line %>' == "The Perfect Pastel") {
+  $('.pastel-product-container').html('<%= j render "slice", :product => @product %>');
+}
+else if ('<%= @product.product_line %>' == "The Perfect Madras") {
+  $('.mardas-product-container').html('<%= j render "slice", :product => @product %>');
+}
+else if ('<%= @product.product_line %>' == 'Perfect Plaids and Gingham') {
+  $('.plaids-and-gingham-product-container').html('<%= j render "slice", :product => @product %>'); 
+}
+
+thumbsrc = $('#exhibit1').attr('src');
+$('.gallery-exhibit').zoom({url: thumbsrc});
+
+$(".gallery-thumb").click(function(e) {
+  console.log("Handler for gallery-thumb .click() called.");
+  thumbsrc = $(e.target).attr('src');
+  $('#exhibit1').attr('src', thumbsrc);
+  $('.gallery-exhibit').zoom({url: thumbsrc});
+});

@@ -19,21 +19,21 @@ webster_desc = "These fabrics are from around town in Hoshiarpur, when the heat 
 img_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYHIutQvJpBupYxSh2QUDebWrpPGkceaoZIwxmi1vIIRW9P8pK7w"
 
 products = [
-  {name: "The R.P. in Navy and Red", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152201830/the-rp-sharma-pocket-square-in-navy-and", name_partial: "rp-navyred"},
-  {name: "The R.P. in Green", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152200914/the-rp-sharma-pocket-square-in-green", name_partial: "rp-green" },
-  {name: "The R.P. in Blue", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152204599/the-rp-sharma-pocket-square-in-blue", name_partial: "rp-blue" },
-  {name: "The R.P. in Juniper and Yellow", price: 21, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152202304/the-rp-sharma-pocket-square-in-juniper", name_partial: "rp-juniper"},
-  {name: "The D.N. in Turqoise Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152754916/the-dn-vashisht-pocket-square-in", name_partial: "dn-turqoise"},
-  {name: "The D.N. in Metal", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152757211/the-dn-vashisht-pocket-square-in-metal", name_partial: "dn-metal"},
-  {name: "The D.N. in Blue Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152754320/the-dn-vashisht-pocket-square-in-blue", name_partial: "dn-blue"},
-  {name: "The D.N. in Pink Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152753598/the-dn-vashisht-pocket-square-in-pink", name_partial: "dn-pink"},
-  {name: "The Webster in Red", price: 8, description: webster_desc, etsy_link: "https://www.etsy.com/listing/152759797/the-webster-pocket-square-in-red", name_partial: "webster-red"},
-  {name: "The Webster in Orange", price: 8, description: webster_desc, etsy_link: "https://www.etsy.com/listing/152759637/the-webster-pocket-square-in-orange", name_partial: "webster-orange" },
-  {name: "The Webster in Gingham", price: 8, description: webster_desc, etsy_link: "https://www.etsy.com/listing/152755192/the-webster-pocket-square-in-gingham", name_partial: "webster-gingham"}
+  {name: "The R.P. in Navy and Red", product_line: "The Perfect Madras", price: 18, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152201830/the-rp-sharma-pocket-square-in-navy-and", name_partial: "rp-navyred"},
+  {name: "The R.P. in Green", product_line: "The Perfect Madras", price: 18, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152200914/the-rp-sharma-pocket-square-in-green", name_partial: "rp-green" },
+  {name: "The R.P. in Blue", product_line: "The Perfect Madras", price: 18, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152204599/the-rp-sharma-pocket-square-in-blue", name_partial: "rp-blue" },
+  {name: "The R.P. in Juniper and Yellow", product_line: "The Perfect Madras", price: 18, description: rp_desc, etsy_link: "https://www.etsy.com/listing/152202304/the-rp-sharma-pocket-square-in-juniper", name_partial: "rp-juniper"},
+  {name: "The D.N. in Turqoise", product_line: "The Perfect Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152754916/the-dn-vashisht-pocket-square-in", name_partial: "dn-turqoise"},
+  {name: "The D.N. in Metal", product_line: "The Perfect Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152757211/the-dn-vashisht-pocket-square-in-metal", name_partial: "dn-metal"},
+  {name: "The D.N. in Blue", product_line: "The Perfect Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152754320/the-dn-vashisht-pocket-square-in-blue", name_partial: "dn-blue"},
+  {name: "The D.N. in Pink", product_line: "The Perfect Pastel", price: 14, description: dn_desc, etsy_link: "https://www.etsy.com/listing/152753598/the-dn-vashisht-pocket-square-in-pink", name_partial: "dn-pink"},
+  {name: "The Webster in Red", product_line: "Perfect Plaids and Gingham", price: 8, description: webster_desc, etsy_link: "https://www.etsy.com/listing/152759797/the-webster-pocket-square-in-red", name_partial: "webster-red"},
+  {name: "The Webster in Orange", product_line: "Perfect Plaids and Gingham", price: 8, description: webster_desc, etsy_link: "https://www.etsy.com/listing/152759637/the-webster-pocket-square-in-orange", name_partial: "webster-orange" },
+  {name: "The Webster in Gingham", product_line: "Perfect Plaids and Gingham", price: 8, description: webster_desc, etsy_link: "https://www.etsy.com/listing/152755192/the-webster-pocket-square-in-gingham", name_partial: "webster-gingham"}
 ]
 
 products.each do |product|
-  p = Product.create(name: product[:name], price: product[:price], description: product[:description], etsy_link: product[:etsy_link])
+  p = Product.create(name: product[:name], product_line: product[:product_line],   price: product[:price], description: product[:description], etsy_link: product[:etsy_link])
   puts "Created product #{p.id}..."
   5.times do |n|
     if n == 0
